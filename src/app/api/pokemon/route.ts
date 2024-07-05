@@ -17,7 +17,6 @@ export const GET = async (request: Request) => {
     );
 
     const allPokemonResponses = await Promise.all(allPokemonPromises);
-    console.log(allPokemonResponses);
 
     const allPokemonData = allPokemonResponses.map(
       ([response, speciesResponse], index) => {

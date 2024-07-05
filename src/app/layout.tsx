@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-red-600 max-w-screen-lg min-w-300px">
-          최상단 레이아웃이다. {children}
+        <div className="max-w-screen-lg min-w-300px p-2.5 mx-auto my-3 text-center justify-center">
+          <h1 className="text-3xl font-bold">포켓몬 도감</h1>
+          <h4 className="text-yellow-400">오늘은 내가 포켓몬 마스터!!</h4>
+          {children}
         </div>
       </body>
     </html>
